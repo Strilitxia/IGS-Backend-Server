@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 5174;
 
 // ✅ Middleware
-app.use(cors({ origin: "igsofficial25.com" })); // You can restrict later to your domain
+app.use(cors({ origin: "*" })); // You can restrict later to your domain
 app.use(express.json());
 
 // ✅ Check API Key
